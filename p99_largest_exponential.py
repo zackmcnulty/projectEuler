@@ -2,6 +2,7 @@
 # convert everything to base two. For example,
 # a^b = 10^x --> log a^b = x --> x = b log a
 # i.e. if a^b > x^y then b log a > y log x
+# this ^ inequality holds only because log is a monotonically increasing function
 
 import math
 import time
