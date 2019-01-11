@@ -17,5 +17,5 @@ for terms in [2*x + 1 for x in range(12, 50)]:
         if primeSum in primes:
             print "terms: " + str(terms) + ", " + str(primeSum)
 
-print "done!"
+print ("done!")
 
