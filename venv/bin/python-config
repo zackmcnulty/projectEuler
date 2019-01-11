@@ -1,4 +1,4 @@
-#!/Users/zackmcnulty/Desktop/Python/projectEuler/venv/bin/python
+#!/Users/zackmcnulty/Desktop/CSE/Python/projectEuler/venv/bin/python
 
 import sys
 import getopt

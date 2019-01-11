@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/zackmcnulty/Desktop/Python/projectEuler/venv"
+set -gx VIRTUAL_ENV "/Users/zackmcnulty/Desktop/CSE/Python/projectEuler/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

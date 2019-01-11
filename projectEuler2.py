@@ -67,44 +67,19 @@ expandPattern(pats, 0, currentPat)
 # each group is not guarenteed to have same other numbers.
 
 for pattern in pats.keys():
-    print pattern, pats[pattern]
+    print( pattern, pats[pattern])
 
 
 
-print "done!"
-
-time.sleep(1000)
-
-
+print ("done!")
 
 
 
 
 
-#third try
-def countMatchingPrimes(pattern):
-    #count number of i's and *'s
 
 
-def findPrime(N, index, currentPattern):
-    if index < N:
-        makePatSet(N, index + 1, currentPattern)
 
-        newPattern = list(currentPattern)
-        newPattern[index] = "i"
-        newPattern = "".join(newPattern)
-        countMatchingPrimes(newPattern)
-
-        makePatSet(N, index + 1, newPattern)
-
-
-for N in range(4, 7):
-    findPrime(N, 0, "*" * N)
-
-print "done!"
-
-
-time.sleep(1000)
 
 
 
@@ -154,12 +129,10 @@ for pattern in options:
         if matchesPattern(str(p), pattern):
             matchingPrimes.add(p)
     if len(matchingPrimes) == 8:
-        print matchingPrimes
+        print (matchingPrimes)
         break
 
-print "done!"
-
-time.sleep(1000)
+print ("done!")
 
 
 
@@ -174,40 +147,6 @@ time.sleep(1000)
 
 
 
-#47: Distinct Prime Factors (correct!)
-from sympy.ntheory import factorint
-
-possNums = list([])
-
-for N in range(1,1000000):
-    primeFacts = factorint(N) #gives a dictionary of containing prime factorization key: value = number: multiplicity in factorization
-    if len(primeFacts.keys()) == 4: possNums.append(N)
-
-print "factored nums!"
-
-for i in range(0, len(possNums) - 3):
-    if possNums[i] + 3 == possNums[i+3]:
-        print possNums[i]
-
-print "done!"
-time.sleep(1000)
 
 
 
-# 50 Consecutive Prime Sum (correct!)
-#logic: must include an odd number of terms, otherwise it cannot be a prime
-
-primes = filter(lambda x: isPrime(x), [x for x in range(2,10**6)])
-
-terms = list([(2*x + 1) for x in range(260,300)])
-
-for nextTerm in terms:
-    print "terms: " + str(nextTerm)
-    for i in range(0, 10**2):
-        primeSum = sum(primes[i:i+nextTerm])
-        if primeSum in primes:
-            print str(primeSum)
-
-print "done!"
-
-time.sleep(1000)
